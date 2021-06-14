@@ -1,4 +1,4 @@
-param ($Name)
+param ([Parameter(Mandatory=$true)] $Name)
 
 git clone https://github.com/losttech/Templates.ClassLib.git "$Name"
 cd "$Name"
